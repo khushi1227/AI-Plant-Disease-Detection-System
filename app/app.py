@@ -5,6 +5,8 @@ from PIL import Image
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 import os
+from src.class_names import CLASS_NAMES
+
 
 # -------------------------------
 # Page Configuration
@@ -62,16 +64,9 @@ st.sidebar.success("Developed by\n\n**Mukul Chakravorty**")
 # Load Class Names
 # -------------------------------
 
-TRAIN_DIR = os.path.join(
-    os.path.dirname(__file__),
-    "..",
-    "dataset",
-    "raw",
-    "New Plant Diseases Dataset(Augmented)",
-    "train"
-)
+from src.class_names import CLASS_NAMES
 
-class_names = sorted(os.listdir(TRAIN_DIR))
+class_names = CLASS_NAMES
 
 # -------------------------------
 # Prediction Function
