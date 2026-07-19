@@ -2,15 +2,18 @@
 
 <p align="center">
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.18-orange?style=for-the-badge&logo=tensorflow)
-![Keras](https://img.shields.io/badge/Keras-DeepLearning-red?style=for-the-badge&logo=keras)
-![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-FF4B4B?style=for-the-badge&logo=streamlit)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+<img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python">
+
+<img src="https://img.shields.io/badge/TensorFlow-2.18-orange?style=for-the-badge&logo=tensorflow">
+
+<img src="https://img.shields.io/badge/Keras-DeepLearning-red?style=for-the-badge&logo=keras">
+
+<img src="https://img.shields.io/badge/Streamlit-WebApp-FF4B4B?style=for-the-badge&logo=streamlit">
+
+<img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge">
 
 </p>
 
----
 
 # 📌 Project Overview
 
@@ -19,6 +22,20 @@ The **AI-Powered Plant Disease Detection System** is a Deep Learning based web a
 The application uses a **Convolutional Neural Network (CNN)** trained on thousands of labeled plant leaf images across **38 different disease categories**. Users can upload an image through a Streamlit web interface and instantly receive the predicted disease along with the model confidence score.
 
 This project demonstrates the complete Deep Learning workflow from dataset preparation to model deployment.
+
+---
+
+
+## 🌐 Live Application
+
+The application has been successfully deployed on Streamlit Cloud and is publicly accessible.
+
+🔗 **Live Demo:** https://ai-plant-disease-detection-system-dtkbwcfey36tl6fcfqr9tj.streamlit.app/
+
+Upload a plant leaf image to receive:
+- 🌿 Predicted Plant Disease
+- 🎯 Prediction Confidence Score
+- ⚡ Real-time CNN-based Inference
 
 ---
 
