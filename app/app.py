@@ -4,7 +4,15 @@ import numpy as np
 from PIL import Image
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
+
 import os
+import sys
+
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+
 from src.class_names import CLASS_NAMES
 
 
