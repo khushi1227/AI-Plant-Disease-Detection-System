@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
-from src.ai_recommendation import get_treatment_recommendation
+
 
 import os
 import sys
@@ -13,6 +13,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+
+from src.ai_recommendation import get_treatment_recommendation
 
 from src.class_names import CLASS_NAMES
 
@@ -73,7 +75,6 @@ st.sidebar.success("Developed by\n\n**Mukul Chakravorty**")
 # Load Class Names
 # -------------------------------
 
-from src.class_names import CLASS_NAMES
 
 class_names = CLASS_NAMES
 
