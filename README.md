@@ -21,7 +21,9 @@ The **AI-Powered Plant Disease Detection System** is a Deep Learning based web a
 
 The application uses a **Convolutional Neural Network (CNN)** trained on thousands of labeled plant leaf images across **38 different disease categories**. Users can upload an image through a Streamlit web interface and instantly receive the predicted disease along with the model confidence score.
 
-This project demonstrates the complete Deep Learning workflow from dataset preparation to model deployment.
+This project demonstrates the complete Deep Learning workflow from dataset preparation to model deployment. 
+
+Also, The application also integrates **Hugging Face's Qwen 2.5-7B-Instruct Large Language Model (LLM)** to generate **AI-powered treatment recommendations**, including **disease description, symptoms, causes, organic treatment, chemical treatment, and prevention tips**.
 
 ---
 
@@ -30,7 +32,9 @@ This project demonstrates the complete Deep Learning workflow from dataset prepa
 
 The application has been successfully deployed on Streamlit Cloud and is publicly accessible.
 
-🔗 **Live Demo:** https://ai-plant-disease-detection-system-dtkbwcfey36tl6fcfqr9tj.streamlit.app/
+🔗 **Live Demo:** : 🔗 **Live Demo**
+
+https://ai-plant-disease-detection-system-dtkbwcfey36tl6fcfqr9tj.streamlit.app/
 
 Upload a plant leaf image to receive:
 - 🌿 Predicted Plant Disease
@@ -64,6 +68,18 @@ Upload a plant leaf image to receive:
 ✅ Deep Learning Model (.keras)
 
 ✅ Clean and Responsive Interface
+
+✅ AI Treatment Recommendation
+
+✅ Hugging Face Integration
+
+✅ Qwen 2.5-7B-Instruct LLM
+
+✅ Organic & Chemical Treatment Suggestions
+
+✅ Prevention Tips
+
+
 
 ---
 
@@ -123,6 +139,10 @@ The model can classify **38 plant disease classes**, including:
 - VS Code
 - Git
 - GitHub
+- Hugging Face
+- Qwen 2.5-7B-Instruct
+- huggingface_hub
+- python-dotenv
 
 ---
 
@@ -145,11 +165,17 @@ Final_Project/
 │
 ├── outputs/
 │
+├── src/
+│   ├── __init__.py
+│   ├── ai_recommendation.py
+│   └── class_names.py
+│
+├── .env
+├── .gitignore
 ├── requirements.txt
-│
+├── runtime.txt
 ├── README.md
-│
-└── .gitignore
+└── test_huggingface.py
 ```
 
 ---
@@ -200,7 +226,13 @@ Disease Prediction
 Confidence Score
       │
       ▼
-Prediction Display
+Hugging Face Qwen LLM
+      │
+      ▼
+AI Treatment Recommendation
+      │
+      ▼
+Streamlit Web Application
 ```
 
 ---
@@ -212,6 +244,9 @@ Prediction Display
 ![Home Page](outputs/application_home_page.png)
 
 ---
+### Uploaded_leaf
+
+![Leaf image](outputs/leaf_image.png)
 
 ### Prediction Result
 
@@ -219,14 +254,19 @@ Prediction Display
 
 ---
 
-# 📈 Future Improvements
+### ai_treatment_recommendation
 
-- 🌿 Disease Treatment Recommendation
-- 🤖 Generative AI Integration
-- ☁️ Cloud Deployment
-- 📱 Mobile Application
-- 📊 Prediction History
+![Treatment Recommendation](outputs/ai_treatment_recommendation.png)
+
+## 📈 Future Improvements
+
+- 📄 PDF Report Download
 - 🌍 Multi-language Support
+- 📱 Mobile Responsive Interface
+- 📈 Prediction History
+- ☁️ Docker Deployment
+- 🌦 Weather-based Disease Prediction
+- 📹 Disease Severity Detection
 
 ---
 

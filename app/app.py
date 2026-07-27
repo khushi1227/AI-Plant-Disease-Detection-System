@@ -4,6 +4,7 @@ import numpy as np
 from PIL import Image
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
+from src.ai_recommendation import get_treatment_recommendation
 
 import os
 import sys
@@ -184,6 +185,26 @@ if uploaded_file is not None:
         else:
 
             st.error("❌ Low Confidence Prediction")
+
+        # Integrating with AI for Recommendation after forming a test file in SRC folder with name ai_recommendation.py
+
+        if "healthy" not in predicted_class.lower():
+            st.divider()
+
+            st.subheader("🤖 AI Treatment Recommendation")
+
+            with st.spinner("Generating AI recommendation...."):
+
+                try:
+
+                    recommendation = get_treatment_recommendation(display_name)
+
+                    st.markdown(recommendation)
+
+                except Exception as e:
+
+                    st.error(f"Failed to generate AI recommendation.\n\n{e}")
+                
 
 
             st.divider()
