@@ -32,7 +32,7 @@ Also, The application also integrates **Hugging Face's Qwen 2.5-7B-Instruct Larg
 
 The application has been successfully deployed on Streamlit Cloud and is publicly accessible.
 
-🔗 **Live Demo:** : 🔗 **Live Demo**
+🔗 **Live Demo:** :
 
 https://ai-plant-disease-detection-system-dtkbwcfey36tl6fcfqr9tj.streamlit.app/
 
