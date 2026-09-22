@@ -38,7 +38,7 @@ MODEL_PATH = os.path.join(
     os.path.dirname(__file__),
     "..",
     "models",
-    "best_plant_disease_model.keras"
+    "best_plant_disease_model_fixed.keras"
 )
 
 @st.cache_resource
@@ -69,7 +69,7 @@ st.sidebar.markdown("""
 
 st.sidebar.divider()
 
-st.sidebar.success("Developed by\n\n**Mukul Chakravorty**")
+st.sidebar.success("Developed by\n\n**Khushi Gupta**")
 
 # -------------------------------
 # Load Class Names
@@ -192,7 +192,7 @@ if uploaded_file is not None:
         if "healthy" not in predicted_class.lower():
             st.divider()
 
-            st.subheader("🤖 AI Treatment Recommendation")
+            st.subheader("🌿 Disease Treatment Recommendation")
 
             with st.spinner("Generating AI recommendation...."):
 
@@ -211,5 +211,5 @@ if uploaded_file is not None:
             st.divider()
 
         st.caption(
-        "🌱 Built with TensorFlow • Keras • Streamlit | © Mukul Chakravorty"
+        "🌱 Built with TensorFlow • Keras • Streamlit | Khushi Gupta"
         )
