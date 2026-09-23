@@ -249,7 +249,7 @@ Utility script used to create a compatible version of the trained `.keras` model
 ## 1. Clone the Repository
 
 ```bash
-https://github.com/khushi1227/AI-Plant-Disease-Detection-System.git
+git clone https://github.com/khushi1227/AI-Plant-Disease-Detection-System.git
 ```
 
 ## 2. Move into the Project Directory
